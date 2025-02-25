@@ -1,6 +1,6 @@
 package com.test.demo.account;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AccountRepository extends CrudRepository<Account, Integer> {
+public interface AccountRepository extends JpaRepository<Account, Long> {
 }

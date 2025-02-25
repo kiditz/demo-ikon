@@ -1,10 +1,13 @@
-package com.test.demo.placeholder.model;
+package com.test.demo.placeholder;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.Data;
+import lombok.*;
 
-@Data
-public class Post {
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
+class Post {
 	int id;
 	@JsonIgnore
 	String userId;

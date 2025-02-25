@@ -1,7 +1,5 @@
-package com.test.demo.placeholder.controller;
+package com.test.demo.placeholder;
 
-import com.test.demo.placeholder.model.Post;
-import com.test.demo.placeholder.service.PlaceholderService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/posts")
 @AllArgsConstructor
-public class PlaceholderController {
+class PlaceholderController {
 	private final PlaceholderService service;
 
 	@GetMapping

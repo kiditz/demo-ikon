@@ -1,8 +1,6 @@
 package com.test.demo.account;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -11,8 +9,12 @@ import lombok.*;
 @Setter
 @ToString
 @RequiredArgsConstructor
+@AllArgsConstructor
 public class Account {
 	@Id
-	int id;
-	String account;
+	@GeneratedValue
+	private Long id;
+
+	@Column(name = "account")
+	private String name;
 }
