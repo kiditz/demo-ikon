@@ -10,7 +10,7 @@ import lombok.*;
 @ToString
 @RequiredArgsConstructor
 @AllArgsConstructor
-public class Account {
+class Account {
 	@Id
 	@GeneratedValue
 	private Long id;
