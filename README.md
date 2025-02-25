@@ -8,3 +8,4 @@
 * See [Package By Layer VS Package By Feature](https://medium.com/@akintopbas96/spring-boot-code-structure-package-by-layer-vs-package-by-feature-5331a0c911fe).
 * Caching use caffeine cache, cause it has ttl (Time-To-Live) features instead of just basic spring cache
 * I also use mapstruct to simplify mapping cause i wont to expose entity on controller layer, it's not safe
+* After the application running you can go to the [swagger](http://localhost:8080/swagger-ui.html) to test the API
