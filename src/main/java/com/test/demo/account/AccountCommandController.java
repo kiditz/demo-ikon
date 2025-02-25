@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/v1/accounts")
 @AllArgsConstructor
-public class AccountCommandController {
+class AccountCommandController {
 	private final AccountCommandService service;
 
 	@PostMapping

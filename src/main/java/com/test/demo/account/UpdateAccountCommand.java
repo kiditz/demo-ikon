@@ -7,7 +7,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UpdateAccountCommand {
+class UpdateAccountCommand {
     private Long id;
     private String name;
 }

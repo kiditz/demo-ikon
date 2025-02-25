@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @AllArgsConstructor
 @Transactional
-public class AccountCommandService {
+class AccountCommandService {
 	private final AccountRepository repository;
 	private final AccountMapper mapper;
 

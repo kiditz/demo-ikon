@@ -18,12 +18,12 @@ class AccountQueryController {
 	private final AccountQueryService service;
 
 	@GetMapping
-	public Page<AccountDTO> getAccounts(@PageableDefault(size = 10, page = 0, sort = "name") Pageable pageable) {
+	Page<AccountDTO> getAccounts(@PageableDefault(size = 10, page = 0, sort = "name") Pageable pageable) {
 		return service.getAccounts(pageable);
 	}
 
 	@GetMapping("/{id}")
-	public Optional<AccountDTO> findById(@PathVariable Long id) {
+	Optional<AccountDTO> findById(@PathVariable Long id) {
 		return service.findById(id);
 	}
 }

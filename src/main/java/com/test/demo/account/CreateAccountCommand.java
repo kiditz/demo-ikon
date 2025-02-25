@@ -6,7 +6,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateAccountCommand {
+class CreateAccountCommand {
     private String name;
 }
 
