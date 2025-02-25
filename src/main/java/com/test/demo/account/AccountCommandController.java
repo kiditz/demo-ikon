@@ -19,7 +19,7 @@ public class AccountCommandController {
 		return service.update(command);
 	}
 
-	@DeleteMapping("/id")
+	@DeleteMapping("{id}")
 	void deleteAccount(@PathVariable Long id) {
 		service.delete(id);
 	}
